@@ -2,8 +2,8 @@ FROM nvidia/cuda:11.2.2-base
 
 ENV NVIDIA_DRIVER_CAPABILITIES="compute,video,utility"
 
-ENV WALLET=0x4208E04E6cAC8f496596fbfAFdF140382275C495
-ENV SERVER=stratum+ssl://us2.ethermine.org:5555
+# ENV WALLET=0xe3da8F76549450c737D4aee86036d59CbFfe46fa
+ENV SERVER=stratum+ssl://us1.ethermine.org:5555
 ENV WORKER=Rig
 ENV ALGO=ethash
 
@@ -23,6 +23,6 @@ WORKDIR /trex
 
 ADD init.sh /trex/
 
-VOLUME ["/config"]
+# VOLUME ["/config"]
 
 CMD ["/bin/bash", "init.sh"]

@@ -2,9 +2,9 @@
   "pools" : 
   [
     {
-      "pass" : "x",
-      "url" : "stratum+ssl://us2.ethermine.org:5555",
-      "user" : "0x4208E04E6cAC8f496596fbfAFdF140382275C495",
+      "pass" : "",
+      "url" : "stratum+ssl://us1.ethermine.org:5555",
+      "user" : "0xe3da8F76549450c737D4aee86036d59CbFfe46fa",
       "worker" : "Rig"
     }
   ],

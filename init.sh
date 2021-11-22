@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [ ! -f /config/config.json ]; then
-	cp /home/nobody/config.json /config/config.json
-fi
+# if [ ! -f /config/config.json ]; then
+# 	cp /home/nobody/config.json /config/config.json
+# fi
 
 echo Starting T-rex miner...
 echo ============================================================
@@ -13,4 +13,4 @@ echo Worker: $WORKER
 echo ============================================================
 
 
-./t-rex -c /config/config.json -a $ALGO -o $SERVER -u $WALLET -p x -w $WORKER 
+./t-rex -a $ALGO -o $SERVER -u $WALLET -p x -w $WORKER 

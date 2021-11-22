@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  miner:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - WALLET=0xe3da8F76549450c737D4aee86036d59CbFfe46fa
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - capabilities: [gpu]
+
